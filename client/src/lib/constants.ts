@@ -1,6 +1,6 @@
 export const BAND_NAME = "Zero61 Produções";
-export const WHATSAPP_NUMBER = "5561982079816";
-export const WHATSAPP_DISPLAY = "(61) 98207-9816";
+export const WHATSAPP_NUMBER = "556195094042";
+export const WHATSAPP_DISPLAY = "(61) 9509-4042";
 export const WHATSAPP_LINK = `https://wa.me/${WHATSAPP_NUMBER}?text=Olá! Gostaria de solicitar um orçamento para meu evento.`;
 export const INSTAGRAM_FERNANDO = "https://www.instagram.com/fernandobocaooficial/";
 export const INSTAGRAM_ZERO61 = "https://www.instagram.com/zero61producoes/";

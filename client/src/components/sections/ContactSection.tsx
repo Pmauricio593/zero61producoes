@@ -5,6 +5,7 @@ import { Phone, Instagram, MapPin, Send } from "lucide-react";
 import { toast } from "sonner";
 import {
   WHATSAPP_LINK,
+  WHATSAPP_NUMBER,
   WHATSAPP_DISPLAY,
   INSTAGRAM_FERNANDO,
   INSTAGRAM_ZERO61,
@@ -25,7 +26,7 @@ export default function ContactSection() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     const message = `Olá! Meu nome é ${formData.nome}.%0A%0ATipo de evento: ${formData.tipoEvento}%0AEmail: ${formData.email}%0AWhatsApp: ${formData.whatsapp}%0A%0AMensagem: ${formData.mensagem}`;
-    const whatsappUrl = `https://wa.me/5561982079816?text=${message}`;
+    const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
     window.open(whatsappUrl, "_blank");
     toast.success("Redirecionando para o WhatsApp...");
   };
