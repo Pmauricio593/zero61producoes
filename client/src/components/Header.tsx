@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { LOGO_URL, WHATSAPP_LINK, WHATSAPP_DISPLAY } from "@/lib/constants";
+import { LOGO_URL, WHATSAPP_LINK, WHATSAPP_DISPLAY, WHATSAPP_NUMBER } from "@/lib/constants";
 import { Menu, X, Phone } from "lucide-react";
 
 const navLinks = [
@@ -65,7 +65,7 @@ export default function Header() {
         {/* CTA Desktop */}
         <div className="hidden lg:flex items-center gap-4">
           <a
-            href={`tel:+${WHATSAPP_DISPLAY.replace(/\D/g, "")}`}
+            href={`tel:+${WHATSAPP_NUMBER}`}
             className="flex items-center gap-2 text-sm text-foreground/60 hover:text-primary transition-colors"
           >
             <Phone className="w-4 h-4" />
