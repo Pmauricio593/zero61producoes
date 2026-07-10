@@ -8,17 +8,18 @@ export const INSTAGRAM_FERNANDO = "https://www.instagram.com/fernandobocaooficia
 export const INSTAGRAM_ZERO61 = "https://www.instagram.com/zero61producoes/";
 export const REGION = "Brasília (DF) e Goiás";
 
-export const LOGO_URL = "https://files.manuscdn.com/user_upload_by_module/session_file/310519663280667462/uaHxdKZGYblddRxA.png";
-
 export const IMAGES = {
-  hero: "/images/hero.jpg",
-  ceremony: "/images/cerimonia-igreja.jpg",
-  cocktail: "/images/coquetel-ensemble.jpg",
-  party: "/images/festa-pista.jpg",
-  band: "/images/banda-completa.jpg",
-  crowd: "/images/festa-multidao.jpg",
-  reception: "/images/recepcao-noivos.jpg",
-  violin: "/images/violino-cerimonia.jpg",
-  stage: "/images/show-palco.jpg",
-  guests: "/images/noivos-convidados.jpg",
+  hero: "/images/html/hero-bg.jpg",
+  about: "/images/html/about.jpg",
+  weddingMain: "/images/html/wedding-main.jpg",
+  wedding1: "/images/html/wedding-1.jpg",
+  wedding2: "/images/html/wedding-2.jpg",
+  formatura: "/images/html/event-formatura.jpg",
+  corporativo: "/images/html/event-corporativo.jpg",
+  aniversario: "/images/html/event-aniversario.jpg",
+  debutante: "/images/html/event-debutante.jpg",
+  gallery1: "/images/html/gallery-1.jpg",
+  gallery2: "/images/html/gallery-2.jpg",
+  gallery3: "/images/html/gallery-3.jpg",
+  gallery4: "/images/html/gallery-4.jpg",
 };

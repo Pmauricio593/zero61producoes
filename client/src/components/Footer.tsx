@@ -1,40 +1,38 @@
-import { LOGO_URL, INSTAGRAM_FERNANDO, INSTAGRAM_ZERO61, WHATSAPP_LINK, WHATSAPP_DISPLAY } from "@/lib/constants";
-import { Instagram, Phone, MapPin } from "lucide-react";
-import Equalizer from "@/components/Equalizer";
+import Logo from "@/components/Logo";
+import {
+  INSTAGRAM_FERNANDO,
+  INSTAGRAM_ZERO61,
+  WHATSAPP_DISPLAY,
+  WHATSAPP_LINK,
+} from "@/lib/constants";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative border-t border-primary/10 bg-card/50">
-      <div className="container py-12">
-        <div className="grid md:grid-cols-3 gap-8 items-start">
-          {/* Logo & Description */}
+    <footer className="border-t border-[#C7D4E3] bg-[#F3ECE0] py-14">
+      <div className="container">
+        <div className="grid gap-10 md:grid-cols-[1.3fr_1fr_1fr]">
           <div>
-            <img
-              src={LOGO_URL}
-              alt="Zero61 Produções"
-              className="h-16 w-auto mb-4"
-            />
-            <p className="text-foreground/50 font-body text-sm leading-relaxed">
-              Banda profissional especializada em casamentos, com atuação também
-              em formaturas, eventos corporativos e festas em Brasília (DF) e
-              Goiás.
+            <a href="#inicio" aria-label="Zero61 Produções" className="mb-4 inline-block">
+              <Logo variant="dark" />
+            </a>
+            <p className="max-w-sm text-[0.88rem] leading-relaxed text-[#5B564C]">
+              Banda profissional especializada em casamentos, com atuação também em formaturas,
+              eventos corporativos e festas em Brasília (DF) e Goiás.
             </p>
           </div>
 
-          {/* Quick Links */}
           <div>
-            <h4 className="font-display text-sm uppercase tracking-widest text-foreground/70 mb-4">
-              Links Rápidos
+            <h4 className="mb-4 text-[0.72rem] uppercase tracking-[0.12em] text-[#5B564C]">
+              Links rápidos
             </h4>
-            <nav className="flex flex-col gap-2">
+            <nav className="flex flex-col text-[0.88rem] leading-8 text-[#5B564C]">
               {[
                 { label: "Início", href: "#inicio" },
                 { label: "Sobre", href: "#sobre" },
                 { label: "Casamentos", href: "#casamentos" },
                 { label: "Eventos", href: "#eventos" },
-                { label: "Diferenciais", href: "#diferenciais" },
                 { label: "Contato", href: "#contato" },
               ].map((link) => (
                 <a
@@ -44,7 +42,7 @@ export default function Footer() {
                     e.preventDefault();
                     document.querySelector(link.href)?.scrollIntoView({ behavior: "smooth" });
                   }}
-                  className="text-foreground/50 hover:text-primary font-body text-sm transition-colors"
+                  className="transition hover:text-[#16233F]"
                 >
                   {link.label}
                 </a>
@@ -52,53 +50,27 @@ export default function Footer() {
             </nav>
           </div>
 
-          {/* Contact */}
           <div>
-            <h4 className="font-display text-sm uppercase tracking-widest text-foreground/70 mb-4">
+            <h4 className="mb-4 text-[0.72rem] uppercase tracking-[0.12em] text-[#5B564C]">
               Contato
             </h4>
-            <div className="flex flex-col gap-3">
-              <a
-                href={WHATSAPP_LINK}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-foreground/50 hover:text-primary font-body text-sm transition-colors"
-              >
-                <Phone className="w-4 h-4" />
+            <div className="flex flex-col text-[0.88rem] leading-8 text-[#5B564C]">
+              <a href={WHATSAPP_LINK} target="_blank" rel="noopener noreferrer" className="hover:text-[#16233F]">
                 {WHATSAPP_DISPLAY}
               </a>
-              <a
-                href={INSTAGRAM_ZERO61}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-foreground/50 hover:text-primary font-body text-sm transition-colors"
-              >
-                <Instagram className="w-4 h-4" />
+              <a href={INSTAGRAM_ZERO61} target="_blank" rel="noopener noreferrer" className="hover:text-[#16233F]">
                 @zero61producoes
               </a>
-              <a
-                href={INSTAGRAM_FERNANDO}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center gap-2 text-foreground/50 hover:text-primary font-body text-sm transition-colors"
-              >
-                <Instagram className="w-4 h-4" />
+              <a href={INSTAGRAM_FERNANDO} target="_blank" rel="noopener noreferrer" className="hover:text-[#16233F]">
                 @fernandobocaooficial
               </a>
-              <div className="flex items-center gap-2 text-foreground/50 font-body text-sm">
-                <MapPin className="w-4 h-4" />
-                Brasília (DF) e Goiás
-              </div>
+              <span>Brasília (DF) e Goiás</span>
             </div>
           </div>
         </div>
 
-        {/* Bottom bar */}
-        <div className="mt-12 pt-6 border-t border-primary/10 flex flex-col md:flex-row items-center justify-between gap-4">
-          <p className="text-foreground/30 font-body text-sm">
-            &copy; {currentYear} Zero61 Produções. Todos os direitos reservados.
-          </p>
-          <Equalizer bars={6} className="h-4 opacity-30" />
+        <div className="mt-10 flex flex-wrap items-center justify-between gap-3 border-t border-[#C7D4E3] pt-6 text-[0.78rem] text-[#5B564C]">
+          <p>&copy; {currentYear} Zero61 Produções. Todos os direitos reservados.</p>
         </div>
       </div>
     </footer>

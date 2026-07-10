@@ -12,7 +12,7 @@ import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
   return (
-    <div className="min-h-screen flex flex-col bg-background text-foreground">
+    <div className="min-h-screen bg-[#FAF6EF] text-[#262420]">
       <Header />
       <main>
         <HeroSection />

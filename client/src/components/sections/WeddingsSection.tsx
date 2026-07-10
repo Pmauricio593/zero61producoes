@@ -1,9 +1,11 @@
-import { motion } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef } from "react";
 import { Check } from "lucide-react";
 import { IMAGES, WHATSAPP_LINK } from "@/lib/constants";
-import Equalizer from "@/components/Equalizer";
+import {
+  ClassicButton,
+  DiamondDivider,
+  Eyebrow,
+  SectionShell,
+} from "@/components/classic/ClassicUi";
 
 const features = [
   "Repertório personalizado para entrada, cerimônia e valsa",
@@ -13,88 +15,54 @@ const features = [
 ];
 
 export default function WeddingsSection() {
-  const ref = useRef(null);
-  const isInView = useInView(ref, { once: true, margin: "-100px" });
-
   return (
-    <section id="casamentos" className="relative py-24 overflow-hidden bg-card/30">
-      <div className="container relative" ref={ref}>
-        <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <motion.div
-            initial={{ opacity: 0, x: -40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8 }}
-          >
-            <p className="font-display text-sm uppercase tracking-[0.28em] text-primary mb-4">
-              Nossa maior especialidade
-            </p>
-            <div className="flex mb-4">
-              <Equalizer bars={8} className="h-6" />
-            </div>
-            <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wider text-foreground mb-6">
-              Especialistas em casamentos
-            </h2>
-            <p className="text-foreground/70 font-body text-lg leading-relaxed mb-4">
-              Do cerimonial à pista de dança, cuidamos da trilha sonora do seu
-              casamento com repertório sob medida para cada etapa, sempre em
-              sintonia com o cerimonial e os fornecedores do dia.
-            </p>
+    <SectionShell id="casamentos" className="bg-[#F3ECE0]">
+      <div className="grid items-center gap-14 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
+        <div>
+          <Eyebrow>Nossa maior especialidade</Eyebrow>
+          <DiamondDivider />
+          <h2 className="font-serif text-[2.1rem] text-[#16233F]">Especialistas em casamentos</h2>
+          <p className="mt-5 text-[1.02rem] leading-[1.85] text-[#5B564C]">
+            Do cerimonial à pista de dança, cuidamos da trilha sonora do seu casamento com
+            repertório sob medida para cada etapa, sempre em sintonia com o cerimonial e os
+            fornecedores do dia.
+          </p>
 
-            <ul className="flex flex-col gap-4 my-8">
-              {features.map((feature) => (
-                <li key={feature} className="flex items-start gap-3 text-foreground/80 font-body">
-                  <Check className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
-                  <span>{feature}</span>
-                </li>
-              ))}
-            </ul>
+          <ul className="my-7 flex flex-col gap-3.5">
+            {features.map((feature) => (
+              <li key={feature} className="flex items-start gap-3 text-[0.98rem] text-[#262420]">
+                <Check className="mt-0.5 h-[18px] w-[18px] shrink-0 text-[#B8934B]" />
+                <span>{feature}</span>
+              </li>
+            ))}
+          </ul>
 
-            <p className="text-foreground/70 font-body text-lg leading-relaxed mb-8">
-              O repertório passeia por sertanejo, pop, forró, axé, pagode, hits
-              internacionais e grandes clássicos que todo mundo conhece e canta
-              junto.
-            </p>
+          <p className="mb-8 text-[1.02rem] leading-[1.85] text-[#5B564C]">
+            O repertório passeia por sertanejo, pop, forró, axé, pagode, hits internacionais e
+            grandes clássicos que todo mundo conhece e canta junto.
+          </p>
 
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-block px-8 py-4 bg-primary text-primary-foreground font-display uppercase text-sm tracking-wider rounded neon-glow hover:bg-primary/90 transition-all duration-300"
-            >
-              Falar sobre meu casamento
-            </a>
-          </motion.div>
+          <ClassicButton href={WHATSAPP_LINK} variant="primary">
+            Falar sobre meu casamento
+          </ClassicButton>
+        </div>
 
-          <motion.div
-            className="grid grid-cols-2 gap-4"
-            initial={{ opacity: 0, x: 40 }}
-            animate={isInView ? { opacity: 1, x: 0 } : {}}
-            transition={{ duration: 0.8, delay: 0.2 }}
-          >
-            <div className="col-span-2 rounded-lg overflow-hidden">
-              <img
-                src={IMAGES.reception}
-                alt="Noivos com a banda Zero61"
-                className="w-full h-72 object-cover"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <img
-                src={IMAGES.ceremony}
-                alt="Música para cerimônia de casamento"
-                className="w-full h-44 object-cover"
-              />
-            </div>
-            <div className="rounded-lg overflow-hidden">
-              <img
-                src={IMAGES.party}
-                alt="Festa de casamento com banda ao vivo"
-                className="w-full h-44 object-cover"
-              />
-            </div>
-          </motion.div>
+        <div className="grid grid-cols-2 gap-4">
+          <div className="photo-frame col-span-2 h-[280px]">
+            <img
+              src={IMAGES.weddingMain}
+              alt="Casamento com a Zero61"
+              className="h-full w-full object-cover"
+            />
+          </div>
+          <div className="photo-frame h-[180px]">
+            <img src={IMAGES.wedding1} alt="Cerimônia" className="h-full w-full object-cover" />
+          </div>
+          <div className="photo-frame h-[180px]">
+            <img src={IMAGES.wedding2} alt="Festa" className="h-full w-full object-cover" />
+          </div>
         </div>
       </div>
-    </section>
+    </SectionShell>
   );
 }
