@@ -12,7 +12,7 @@ export default function HeroSection() {
       <div className="absolute inset-0">
         <img
           src={IMAGES.hero}
-          alt="Zero61 Produções ao vivo"
+          alt="Zero61 Produções em casamento ao vivo"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
@@ -48,8 +48,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Música ao Vivo para{" "}
-          <span className="neon-text text-primary">Seu Evento</span>
+          Música ao Vivo para o{" "}
+          <span className="neon-text text-primary">Seu Casamento</span>
         </motion.h1>
 
         <motion.p
@@ -58,9 +58,8 @@ export default function HeroSection() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Banda profissional para casamentos, formaturas, eventos corporativos e
-          festas em Brasília (DF) e Goiás. Transformamos seu evento em uma
-          experiência inesquecível.
+          Banda profissional para casamentos em Brasília e Goiás. Da cerimônia à
+          festa, criamos a trilha sonora do dia mais especial da sua vida.
         </motion.p>
 
         <motion.p
@@ -87,14 +86,14 @@ export default function HeroSection() {
             Solicitar Orçamento
           </a>
           <a
-            href="#sobre"
+            href="#casamentos"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector("#sobre")?.scrollIntoView({ behavior: "smooth" });
+              document.querySelector("#casamentos")?.scrollIntoView({ behavior: "smooth" });
             }}
             className="px-8 py-4 border border-white/30 text-white font-display uppercase text-lg tracking-wider rounded hover:border-primary hover:text-primary transition-all duration-300"
           >
-            Conheça a Banda
+            Momentos do Casamento
           </a>
         </motion.div>
       </div>

@@ -25,7 +25,7 @@ export default function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Olá! Meu nome é ${formData.nome}.%0A%0ATipo de evento: ${formData.tipoEvento}%0AEmail: ${formData.email}%0AWhatsApp: ${formData.whatsapp}%0A%0AMensagem: ${formData.mensagem}`;
+    const message = `Olá! Meu nome é ${formData.nome}.%0A%0ACasamento / momento: ${formData.tipoEvento}%0AEmail: ${formData.email}%0AWhatsApp: ${formData.whatsapp}%0A%0AMensagem: ${formData.mensagem}`;
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
     window.open(whatsappUrl, "_blank");
     toast.success("Redirecionando para o WhatsApp...");
@@ -60,8 +60,8 @@ export default function ContactSection() {
             <span className="text-primary neon-text">Contato</span>
           </h2>
           <p className="text-foreground/60 font-body text-lg max-w-2xl mx-auto">
-            Reserve a Zero61 Produções para o seu próximo evento! Preencha o
-            formulário ou entre em contato diretamente pelo WhatsApp.
+            Vamos criar a trilha sonora do seu casamento! Preencha o formulário
+            ou fale direto pelo WhatsApp.
           </p>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full neon-glow mt-4" />
         </motion.div>
@@ -123,7 +123,7 @@ export default function ContactSection() {
               </div>
               <div>
                 <label className="block font-display text-sm uppercase tracking-wider text-foreground/70 mb-2">
-                  Tipo de Evento *
+                  Momento do Casamento *
                 </label>
                 <select
                   name="tipoEvento"
@@ -133,12 +133,11 @@ export default function ContactSection() {
                   className="w-full px-4 py-3 bg-input border border-border rounded font-body text-foreground focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all outline-none"
                 >
                   <option value="">Selecione...</option>
-                  <option value="Casamento">Casamento</option>
-                  <option value="Formatura">Formatura</option>
-                  <option value="Evento Corporativo">Evento Corporativo</option>
-                  <option value="Aniversário">Aniversário</option>
-                  <option value="Confraternização">Confraternização</option>
-                  <option value="Debutante">Debutante</option>
+                  <option value="Casamento Completo">Casamento Completo</option>
+                  <option value="Cerimônia">Cerimônia</option>
+                  <option value="Coquetel">Coquetel</option>
+                  <option value="Festa / Recepção">Festa / Recepção</option>
+                  <option value="Pré-wedding">Pré-wedding</option>
                   <option value="Outro">Outro</option>
                 </select>
               </div>
@@ -153,7 +152,7 @@ export default function ContactSection() {
                 value={formData.mensagem}
                 onChange={handleChange}
                 rows={4}
-                placeholder="Conte-nos sobre seu evento: data, local, número de convidados..."
+                placeholder="Conte sobre o casamento: data, local, número de convidados e o que vocês imaginam..."
                 className="w-full px-4 py-3 bg-input border border-border rounded font-body text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all outline-none resize-none"
               />
             </div>

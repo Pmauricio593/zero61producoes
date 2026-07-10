@@ -7,27 +7,27 @@ import Equalizer from "@/components/Equalizer";
 const differentials = [
   {
     icon: Music,
-    title: "Repertório Versátil",
+    title: "Repertório Personalizado",
     description:
-      "Dos clássicos aos hits atuais, nossa banda toca todos os estilos musicais. Sertanejo, pop, rock, funk, pagode, MPB e muito mais. Adaptamos o repertório ao perfil do seu evento.",
+      "Montamos a playlist do seu casamento com vocês — da música da entrada às músicas que não podem faltar na pista. Sertanejo, pop, MPB, rock e muito mais.",
   },
   {
     icon: Zap,
-    title: "Performances com Energia",
+    title: "Energia na Pista",
     description:
-      "Nossos músicos e vocalistas têm o dom de envolver o público com performances extremamente cativantes. Levamos a atmosfera da sua festa a outro nível.",
+      "Nossos músicos sabem ler a festa e envolver os convidados. Do primeiro slow ao último hit, mantemos a pista cheia e a celebração no auge.",
   },
   {
     icon: Speaker,
-    title: "Equipamentos de Ponta",
+    title: "Som e Iluminação Profissionais",
     description:
-      "Investimos constantemente em tecnologia de áudio e iluminação profissional para proporcionar uma experiência sonora e visual impecável em cada evento.",
+      "Equipamento de ponta para cerimônia, coquetel e festa. Qualidade sonora impecável e produção visual que valoriza cada momento do seu casamento.",
   },
   {
     icon: Star,
-    title: "Experiência Comprovada",
+    title: "Experiência em Casamentos",
     description:
-      "Com mais de 500 eventos realizados em Brasília e Goiás, sabemos exatamente como criar o clima ideal para cada tipo de ocasião e público.",
+      "Centenas de casamentos realizados em Brasília e Goiás. Sabemos conduzir cada etapa com pontualidade, elegância e o clima certo para o seu grande dia.",
   },
 ];
 
@@ -61,8 +61,8 @@ export default function DifferentialsSection() {
             <Equalizer bars={8} className="h-6" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wider text-foreground mb-4">
-            O que nos torna{" "}
-            <span className="text-primary neon-text">Únicos</span>
+            Por que somos a escolha dos{" "}
+            <span className="text-primary neon-text">Noivos</span>
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full neon-glow" />
         </motion.div>

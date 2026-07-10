@@ -7,21 +7,21 @@ import { IMAGES, WHATSAPP_LINK } from "@/lib/constants";
 const reasons = [
   {
     icon: ShieldCheck,
-    title: "Garantia de Sucesso",
+    title: "Seu casamento, sem imprevistos",
     description:
-      "Nossa equipe dedicada trabalha incansavelmente para garantir que seu evento seja um verdadeiro sucesso, proporcionando uma experiência inigualável a todos os presentes.",
+      "Planejamos cada detalhe musical com antecedência — horários, repertório e logística — para que vocês só precisem aproveitar o grande dia.",
   },
   {
     icon: Heart,
-    title: "Satisfação Garantida",
+    title: "Feito para emocionar",
     description:
-      "A satisfação dos nossos clientes é nossa prioridade. Estamos comprometidos em superar suas expectativas e tornar seu evento inesquecível.",
+      "Entendemos o peso desse momento. Cuidamos da cerimônia com sensibilidade e da festa com a energia que os noivos e convidados merecem.",
   },
   {
     icon: Award,
-    title: "Profissionalismo em Primeiro Lugar",
+    title: "Atendimento personalizado",
     description:
-      "Somos reconhecidos por nosso profissionalismo e atendimento personalizado, garantindo que cada detalhe seja cuidadosamente planejado e executado.",
+      "Cada casamento é único. Conversamos com os noivos, entendemos o estilo da celebração e montamos uma proposta sob medida para vocês.",
   },
 ];
 
@@ -34,7 +34,7 @@ export default function WhyChooseSection() {
       {/* Background image */}
       <div className="absolute inset-0">
         <img
-          src={IMAGES.party}
+          src={IMAGES.crowd}
           alt=""
           className="w-full h-full object-cover"
           aria-hidden="true"
@@ -51,7 +51,8 @@ export default function WhyChooseSection() {
         >
           <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wider text-foreground mb-4">
             Por que escolher a{" "}
-            <span className="text-primary neon-text">Zero61</span>
+            <span className="text-primary neon-text">Zero61</span> no seu
+            casamento
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full neon-glow" />
         </motion.div>
@@ -94,7 +95,7 @@ export default function WhyChooseSection() {
             rel="noopener noreferrer"
             className="inline-block px-10 py-4 bg-primary text-primary-foreground font-display uppercase text-lg tracking-wider rounded neon-glow hover:bg-primary/90 transition-all duration-300 hover:scale-105"
           >
-            Fale Conosco Agora
+            Fale Conosco e Planeje Seu Casamento
           </a>
         </motion.div>
       </div>

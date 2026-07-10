@@ -77,8 +77,8 @@ export default function AboutSection() {
           >
             <div className="relative rounded-lg overflow-hidden">
               <img
-                src={IMAGES.vocalist}
-                alt="Zero61 Produções - Performance ao vivo"
+                src={IMAGES.reception}
+                alt="Zero61 Produções em casamento"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
@@ -94,27 +94,27 @@ export default function AboutSection() {
             transition={{ duration: 0.8, delay: 0.4 }}
           >
             <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-6 uppercase tracking-wide">
-              Energia e Profissionalismo em Cada Show
+              Especialistas em música para casamentos
             </h3>
             <p className="text-foreground/70 font-body text-lg leading-relaxed mb-6">
-              A Zero61 Produções é referência em música ao vivo para eventos em
-              Brasília e Goiás. Com uma equipe de músicos experientes e
-              apaixonados, levamos energia, interação e muita qualidade musical
-              para cada evento.
+              A Zero61 Produções é referência em música ao vivo para casamentos
+              em Brasília e Goiás. Com músicos experientes e apaixonados, levamos
+              emoção na cerimônia, elegância no coquetel e muita energia na
+              festa.
             </p>
             <p className="text-foreground/70 font-body text-lg leading-relaxed mb-8">
-              Seja um casamento elegante, uma formatura inesquecível, um evento
-              corporativo de alto nível ou uma festa de aniversário animada,
-              nossa banda se adapta ao estilo do seu evento, garantindo que cada
-              momento seja especial e memorável.
+              Montamos o formato ideal para o seu grande dia — cerimônia,
+              coquetel ou banda completa — com repertório personalizado,
+              equipamento profissional e a interação que transforma convidados em
+              participantes da celebração.
             </p>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
-                <Counter target={1000} suffix="+" />
+                <Counter target={500} suffix="+" />
                 <p className="text-foreground/50 font-body text-sm mt-2 uppercase tracking-wider">
-                  Eventos Realizados
+                  Casamentos Realizados
                 </p>
               </div>
               <div className="text-center">
