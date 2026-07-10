@@ -1,18 +1,13 @@
-/*
- * Design: "Neon Stage" — Estética de Palco Noturno
- * Cores: Preto profundo (#050510) + Azul elétrico (primary) + Branco
- * Tipografia: Oswald (display) + Raleway (body)
- * Elementos: Equalizer bars, glow effects, glass cards
- */
-
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
 import HeroSection from "@/components/sections/HeroSection";
 import AboutSection from "@/components/sections/AboutSection";
-import EventsSection from "@/components/sections/EventsSection";
+import WeddingsSection from "@/components/sections/WeddingsSection";
+import OtherEventsSection from "@/components/sections/OtherEventsSection";
 import DifferentialsSection from "@/components/sections/DifferentialsSection";
 import WhyChooseSection from "@/components/sections/WhyChooseSection";
+import GallerySection from "@/components/sections/GallerySection";
 import ContactSection from "@/components/sections/ContactSection";
 
 export default function Home() {
@@ -22,9 +17,11 @@ export default function Home() {
       <main>
         <HeroSection />
         <AboutSection />
-        <EventsSection />
+        <WeddingsSection />
+        <OtherEventsSection />
         <DifferentialsSection />
         <WhyChooseSection />
+        <GallerySection />
         <ContactSection />
       </main>
       <Footer />

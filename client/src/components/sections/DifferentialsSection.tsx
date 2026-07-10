@@ -7,27 +7,27 @@ import Equalizer from "@/components/Equalizer";
 const differentials = [
   {
     icon: Music,
-    title: "Repertório Personalizado",
+    title: "Repertório versátil",
     description:
-      "Montamos a playlist do seu casamento com vocês — da música da entrada às músicas que não podem faltar na pista. Sertanejo, pop, MPB, rock e muito mais.",
+      "Sertanejo, pop, forró, axé, pagode, internacional e grandes clássicos conhecidos, sempre no tom certo para cada celebração.",
   },
   {
     icon: Zap,
-    title: "Energia na Pista",
+    title: "Performances com energia",
     description:
-      "Nossos músicos sabem ler a festa e envolver os convidados. Do primeiro slow ao último hit, mantemos a pista cheia e a celebração no auge.",
+      "Músicos e vocalistas que envolvem o público com presença de palco e sensibilidade.",
   },
   {
     icon: Speaker,
-    title: "Som e Iluminação Profissionais",
+    title: "Equipamento de ponta",
     description:
-      "Equipamento de ponta para cerimônia, coquetel e festa. Qualidade sonora impecável e produção visual que valoriza cada momento do seu casamento.",
+      "Áudio e iluminação profissionais para uma experiência impecável, discreta quando o momento pede.",
   },
   {
     icon: Star,
-    title: "Experiência em Casamentos",
+    title: "Experiência comprovada",
     description:
-      "Centenas de casamentos realizados em Brasília e Goiás. Sabemos conduzir cada etapa com pontualidade, elegância e o clima certo para o seu grande dia.",
+      "São mais de 500 eventos realizados em Brasília e Goiás. Sabemos criar o clima ideal para cada ocasião.",
   },
 ];
 
@@ -37,7 +37,6 @@ export default function DifferentialsSection() {
 
   return (
     <section id="diferenciais" className="relative py-24 overflow-hidden">
-      {/* Background image overlay */}
       <div className="absolute inset-0">
         <div
           className="absolute inset-0 opacity-[0.03]"
@@ -50,24 +49,24 @@ export default function DifferentialsSection() {
       </div>
 
       <div className="container relative" ref={ref}>
-        {/* Section Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
+          <p className="font-display text-sm uppercase tracking-[0.28em] text-primary mb-4">
+            Diferenciais
+          </p>
           <div className="flex justify-center mb-4">
             <Equalizer bars={8} className="h-6" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wider text-foreground mb-4">
-            Por que somos a escolha dos{" "}
-            <span className="text-primary neon-text">Noivos</span>
+            O que nos torna únicos
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full neon-glow" />
         </motion.div>
 
-        {/* Differentials Grid */}
         <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
           {differentials.map((item, index) => {
             const Icon = item.icon;

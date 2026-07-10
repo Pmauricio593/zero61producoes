@@ -8,18 +8,16 @@ export default function HeroSection() {
       id="inicio"
       className="relative min-h-screen flex items-center justify-center overflow-hidden"
     >
-      {/* Background Image */}
       <div className="absolute inset-0">
         <img
           src={IMAGES.hero}
-          alt="Zero61 Produções em casamento ao vivo"
+          alt="Zero61 Produções em casamento"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-background/80 via-background/50 to-background" />
         <div className="absolute inset-0 bg-gradient-to-r from-background/60 via-transparent to-background/60" />
       </div>
 
-      {/* Content */}
       <div className="relative z-10 container flex flex-col items-center text-center pt-24 pb-16">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -42,33 +40,34 @@ export default function HeroSection() {
           <Equalizer bars={16} className="h-10" />
         </motion.div>
 
+        <motion.p
+          className="text-sm md:text-base text-primary/80 font-display uppercase tracking-widest mb-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
+          Brasília &bull; Goiânia &bull; Região
+        </motion.p>
+
         <motion.h1
           className="font-display text-4xl md:text-5xl lg:text-7xl font-bold uppercase tracking-wider text-white mb-4 leading-tight"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          Música ao Vivo para o{" "}
-          <span className="neon-text text-primary">Seu Casamento</span>
+          Música ao vivo para o dia mais{" "}
+          <span className="neon-text text-primary">especial</span> da sua história
         </motion.h1>
 
         <motion.p
-          className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-4 font-body font-light"
+          className="text-lg md:text-xl text-white/80 max-w-2xl mx-auto mb-10 font-body font-light"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.6 }}
         >
-          Banda profissional para casamentos em Brasília e Goiás. Da cerimônia à
-          festa, criamos a trilha sonora do dia mais especial da sua vida.
-        </motion.p>
-
-        <motion.p
-          className="text-sm md:text-base text-primary/80 font-display uppercase tracking-widest mb-10"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.8 }}
-        >
-          Brasília &bull; Goiânia &bull; Região Centro-Oeste
+          Banda especializada em casamentos, com a sensibilidade que a cerimônia
+          pede e a energia que a festa merece. Atendemos também formaturas,
+          aniversários e eventos corporativos em Brasília e Goiás.
         </motion.p>
 
         <motion.div
@@ -83,22 +82,21 @@ export default function HeroSection() {
             rel="noopener noreferrer"
             className="px-8 py-4 bg-primary text-primary-foreground font-display uppercase text-lg tracking-wider rounded neon-glow hover:bg-primary/90 transition-all duration-300 hover:scale-105"
           >
-            Solicitar Orçamento
+            Orçamento para casamento
           </a>
           <a
-            href="#casamentos"
+            href="#eventos"
             onClick={(e) => {
               e.preventDefault();
-              document.querySelector("#casamentos")?.scrollIntoView({ behavior: "smooth" });
+              document.querySelector("#eventos")?.scrollIntoView({ behavior: "smooth" });
             }}
             className="px-8 py-4 border border-white/30 text-white font-display uppercase text-lg tracking-wider rounded hover:border-primary hover:text-primary transition-all duration-300"
           >
-            Momentos do Casamento
+            Ver todos os eventos
           </a>
         </motion.div>
       </div>
 
-      {/* Scroll indicator */}
       <motion.div
         className="absolute bottom-8 left-1/2 -translate-x-1/2"
         animate={{ y: [0, 10, 0] }}

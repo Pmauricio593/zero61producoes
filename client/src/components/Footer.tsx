@@ -17,8 +17,9 @@ export default function Footer() {
               className="h-16 w-auto mb-4"
             />
             <p className="text-foreground/50 font-body text-sm leading-relaxed">
-              Música ao vivo para casamentos em Brasília e Goiás. Da cerimônia à
-              festa, a trilha sonora do seu grande dia.
+              Banda profissional especializada em casamentos, com atuação também
+              em formaturas, eventos corporativos e festas em Brasília (DF) e
+              Goiás.
             </p>
           </div>
 
@@ -32,6 +33,7 @@ export default function Footer() {
                 { label: "Início", href: "#inicio" },
                 { label: "Sobre", href: "#sobre" },
                 { label: "Casamentos", href: "#casamentos" },
+                { label: "Eventos", href: "#eventos" },
                 { label: "Diferenciais", href: "#diferenciais" },
                 { label: "Contato", href: "#contato" },
               ].map((link) => (

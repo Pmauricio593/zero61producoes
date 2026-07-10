@@ -7,21 +7,21 @@ import { IMAGES, WHATSAPP_LINK } from "@/lib/constants";
 const reasons = [
   {
     icon: ShieldCheck,
-    title: "Seu casamento, sem imprevistos",
+    title: "Garantia de sucesso",
     description:
-      "Planejamos cada detalhe musical com antecedência — horários, repertório e logística — para que vocês só precisem aproveitar o grande dia.",
+      "Trabalhamos para que cada detalhe do seu evento saia exatamente como planejado.",
   },
   {
     icon: Heart,
-    title: "Feito para emocionar",
+    title: "Satisfação garantida",
     description:
-      "Entendemos o peso desse momento. Cuidamos da cerimônia com sensibilidade e da festa com a energia que os noivos e convidados merecem.",
+      "Comprometidos em superar expectativas e tornar seu evento inesquecível.",
   },
   {
     icon: Award,
-    title: "Atendimento personalizado",
+    title: "Profissionalismo em 1º lugar",
     description:
-      "Cada casamento é único. Conversamos com os noivos, entendemos o estilo da celebração e montamos uma proposta sob medida para vocês.",
+      "Atendimento personalizado, com cada detalhe planejado com antecedência.",
   },
 ];
 
@@ -31,7 +31,6 @@ export default function WhyChooseSection() {
 
   return (
     <section className="relative py-24 overflow-hidden">
-      {/* Background image */}
       <div className="absolute inset-0">
         <img
           src={IMAGES.crowd}
@@ -49,10 +48,11 @@ export default function WhyChooseSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
+          <p className="font-display text-sm uppercase tracking-[0.28em] text-primary mb-4">
+            Confiança
+          </p>
           <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wider text-foreground mb-4">
-            Por que escolher a{" "}
-            <span className="text-primary neon-text">Zero61</span> no seu
-            casamento
+            Por que escolher a Zero61
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full neon-glow" />
         </motion.div>
@@ -82,7 +82,22 @@ export default function WhyChooseSection() {
           })}
         </div>
 
-        {/* CTA */}
+        <motion.blockquote
+          className="max-w-3xl mx-auto text-center border-t border-primary/20 pt-12 mb-12"
+          initial={{ opacity: 0, y: 20 }}
+          animate={isInView ? { opacity: 1, y: 0 } : {}}
+          transition={{ delay: 0.6 }}
+        >
+          <p className="font-body text-xl md:text-2xl italic text-foreground/80 leading-relaxed">
+            "Encaixou certinho tudo o que a gente precisava: cada música no
+            momento certo e o pessoal vibrando até agora. A festa vai acabar e eu
+            vou pagar a hora extra com orgulho!"
+          </p>
+          <footer className="mt-6 font-display text-sm uppercase tracking-widest text-foreground/50">
+            Daniel e Jéssika — Noivos
+          </footer>
+        </motion.blockquote>
+
         <motion.div
           className="text-center"
           initial={{ opacity: 0, y: 20 }}
@@ -93,9 +108,9 @@ export default function WhyChooseSection() {
             href={WHATSAPP_LINK}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-block px-10 py-4 bg-primary text-primary-foreground font-display uppercase text-lg tracking-wider rounded neon-glow hover:bg-primary/90 transition-all duration-300 hover:scale-105"
+            className="inline-block px-10 py-4 border border-primary/40 text-foreground font-display uppercase text-lg tracking-wider rounded hover:bg-primary hover:text-primary-foreground transition-all duration-300"
           >
-            Fale Conosco e Planeje Seu Casamento
+            Fale conosco agora
           </a>
         </motion.div>
       </div>

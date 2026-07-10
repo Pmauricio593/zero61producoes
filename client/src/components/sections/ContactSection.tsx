@@ -20,12 +20,13 @@ export default function ContactSection() {
     email: "",
     whatsapp: "",
     tipoEvento: "",
+    dataEvento: "",
     mensagem: "",
   });
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const message = `Olá! Meu nome é ${formData.nome}.%0A%0ACasamento / momento: ${formData.tipoEvento}%0AEmail: ${formData.email}%0AWhatsApp: ${formData.whatsapp}%0A%0AMensagem: ${formData.mensagem}`;
+    const message = `Olá! Meu nome é ${formData.nome}.%0A%0ATipo de evento: ${formData.tipoEvento}%0AData do evento: ${formData.dataEvento}%0AEmail: ${formData.email}%0AWhatsApp: ${formData.whatsapp}%0A%0AMensagem: ${formData.mensagem}`;
     const whatsappUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${message}`;
     window.open(whatsappUrl, "_blank");
     toast.success("Redirecionando para o WhatsApp...");
@@ -52,16 +53,18 @@ export default function ContactSection() {
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
+          <p className="font-display text-sm uppercase tracking-[0.28em] text-primary mb-4">
+            Contato
+          </p>
           <div className="flex justify-center mb-4">
             <Equalizer bars={8} className="h-6" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wider text-foreground mb-4">
-            Entre em{" "}
-            <span className="text-primary neon-text">Contato</span>
+            Reserve a Zero61 para o seu evento
           </h2>
           <p className="text-foreground/60 font-body text-lg max-w-2xl mx-auto">
-            Vamos criar a trilha sonora do seu casamento! Preencha o formulário
-            ou fale direto pelo WhatsApp.
+            Preencha o formulário com os detalhes do seu casamento ou evento, ou
+            fale diretamente pelo WhatsApp.
           </p>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full neon-glow mt-4" />
         </motion.div>
@@ -117,13 +120,13 @@ export default function ContactSection() {
                   value={formData.whatsapp}
                   onChange={handleChange}
                   required
-                  placeholder="(61) 99999-9999"
+                  placeholder="(61) 99999 9999"
                   className="w-full px-4 py-3 bg-input border border-border rounded font-body text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all outline-none"
                 />
               </div>
               <div>
                 <label className="block font-display text-sm uppercase tracking-wider text-foreground/70 mb-2">
-                  Momento do Casamento *
+                  Tipo de evento *
                 </label>
                 <select
                   name="tipoEvento"
@@ -133,14 +136,28 @@ export default function ContactSection() {
                   className="w-full px-4 py-3 bg-input border border-border rounded font-body text-foreground focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all outline-none"
                 >
                   <option value="">Selecione...</option>
-                  <option value="Casamento Completo">Casamento Completo</option>
-                  <option value="Cerimônia">Cerimônia</option>
-                  <option value="Coquetel">Coquetel</option>
-                  <option value="Festa / Recepção">Festa / Recepção</option>
-                  <option value="Pré-wedding">Pré-wedding</option>
+                  <option value="Casamento">Casamento</option>
+                  <option value="Formatura">Formatura</option>
+                  <option value="Evento Corporativo">Evento Corporativo</option>
+                  <option value="Aniversário">Aniversário</option>
+                  <option value="Debutante">Debutante</option>
                   <option value="Outro">Outro</option>
                 </select>
               </div>
+            </div>
+
+            <div className="mb-6">
+              <label className="block font-display text-sm uppercase tracking-wider text-foreground/70 mb-2">
+                Data do evento
+              </label>
+              <input
+                type="text"
+                name="dataEvento"
+                value={formData.dataEvento}
+                onChange={handleChange}
+                placeholder="dd/mm/aaaa"
+                className="w-full px-4 py-3 bg-input border border-border rounded font-body text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all outline-none"
+              />
             </div>
 
             <div className="mb-6">
@@ -152,7 +169,7 @@ export default function ContactSection() {
                 value={formData.mensagem}
                 onChange={handleChange}
                 rows={4}
-                placeholder="Conte sobre o casamento: data, local, número de convidados e o que vocês imaginam..."
+                placeholder="Conte-nos sobre o seu casamento ou evento: local, número de convidados..."
                 className="w-full px-4 py-3 bg-input border border-border rounded font-body text-foreground placeholder:text-muted-foreground focus:border-primary focus:ring-1 focus:ring-primary/30 transition-all outline-none resize-none"
               />
             </div>

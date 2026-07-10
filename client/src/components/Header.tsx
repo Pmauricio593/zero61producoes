@@ -7,6 +7,7 @@ const navLinks = [
   { label: "Início", href: "#inicio" },
   { label: "Sobre", href: "#sobre" },
   { label: "Casamentos", href: "#casamentos" },
+  { label: "Eventos", href: "#eventos" },
   { label: "Diferenciais", href: "#diferenciais" },
   { label: "Contato", href: "#contato" },
 ];
@@ -79,7 +80,7 @@ export default function Header() {
             rel="noopener noreferrer"
             className="px-6 py-2.5 bg-primary text-primary-foreground font-display uppercase text-sm tracking-wider rounded neon-glow hover:bg-primary/90 transition-all duration-300"
           >
-            Solicitar Orçamento
+            Solicitar orçamento
           </a>
         </div>
 
@@ -118,7 +119,7 @@ export default function Header() {
                 rel="noopener noreferrer"
                 className="mt-4 px-6 py-3 bg-primary text-primary-foreground font-display uppercase text-center tracking-wider rounded neon-glow"
               >
-                Solicitar Orçamento
+                Solicitar orçamento
               </a>
             </nav>
           </motion.div>

@@ -37,7 +37,6 @@ export default function AboutSection() {
 
   return (
     <section id="sobre" className="relative py-24 overflow-hidden">
-      {/* Subtle background pattern */}
       <div className="absolute inset-0 opacity-5">
         <div
           className="absolute inset-0"
@@ -50,25 +49,25 @@ export default function AboutSection() {
       </div>
 
       <div className="container relative" ref={ref}>
-        {/* Section Header */}
         <motion.div
           className="text-center mb-16"
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
           transition={{ duration: 0.6 }}
         >
+          <p className="font-display text-sm uppercase tracking-[0.28em] text-primary mb-4">
+            Quem somos
+          </p>
           <div className="flex justify-center mb-4">
             <Equalizer bars={8} className="h-6" />
           </div>
           <h2 className="font-display text-4xl md:text-5xl font-bold uppercase tracking-wider text-foreground mb-4">
-            Sobre a <span className="text-primary neon-text">Zero61</span>
+            Energia e sofisticação em cada cerimônia
           </h2>
           <div className="w-24 h-1 bg-primary mx-auto rounded-full neon-glow" />
         </motion.div>
 
-        {/* Content Grid */}
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Image Side */}
           <motion.div
             className="relative"
             initial={{ opacity: 0, x: -50 }}
@@ -77,50 +76,43 @@ export default function AboutSection() {
           >
             <div className="relative rounded-lg overflow-hidden">
               <img
-                src={IMAGES.reception}
+                src={IMAGES.band}
                 alt="Zero61 Produções em casamento"
                 className="w-full h-[500px] object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
             </div>
-            {/* Decorative border */}
             <div className="absolute -bottom-4 -right-4 w-full h-full border-2 border-primary/20 rounded-lg -z-10" />
           </motion.div>
 
-          {/* Text Side */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.8, delay: 0.4 }}
           >
-            <h3 className="font-display text-2xl md:text-3xl font-semibold text-foreground mb-6 uppercase tracking-wide">
-              Especialistas em música para casamentos
-            </h3>
             <p className="text-foreground/70 font-body text-lg leading-relaxed mb-6">
               A Zero61 Produções é referência em música ao vivo para casamentos
-              em Brasília e Goiás. Com músicos experientes e apaixonados, levamos
-              emoção na cerimônia, elegância no coquetel e muita energia na
-              festa.
+              em Brasília e Goiás. Nossa equipe de músicos experientes conduz
+              cerimônia, coquetel e festa com sensibilidade, elegância e um
+              repertório desenhado para a história de cada casal.
             </p>
             <p className="text-foreground/70 font-body text-lg leading-relaxed mb-8">
-              Montamos o formato ideal para o seu grande dia — cerimônia,
-              coquetel ou banda completa — com repertório personalizado,
-              equipamento profissional e a interação que transforma convidados em
-              participantes da celebração.
+              Também levamos essa mesma qualidade para formaturas, eventos
+              corporativos e aniversários, sempre adaptando o tom da apresentação
+              ao estilo de cada celebração.
             </p>
 
-            {/* Stats */}
             <div className="grid grid-cols-3 gap-6">
               <div className="text-center">
                 <Counter target={500} suffix="+" />
                 <p className="text-foreground/50 font-body text-sm mt-2 uppercase tracking-wider">
-                  Casamentos Realizados
+                  Eventos realizados
                 </p>
               </div>
               <div className="text-center">
                 <Counter target={8} suffix="+" />
                 <p className="text-foreground/50 font-body text-sm mt-2 uppercase tracking-wider">
-                  Anos de Experiência
+                  Anos de experiência
                 </p>
               </div>
               <div className="text-center">
