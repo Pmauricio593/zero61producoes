@@ -585,6 +585,10 @@ blockquote {
   line-height: 1;
 }
 
+.proof-strip__wide strong {
+  text-wrap: balance;
+}
+
 .proof-strip strong span {
   color: var(--accent);
 }
@@ -1798,10 +1802,11 @@ blockquote {
 
   .event-tabs {
     display: grid;
-    grid-template-columns: minmax(0, 1fr);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .event-tab {
+    width: 100%;
     padding-inline: 0.8rem;
   }
 

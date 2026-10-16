@@ -16,11 +16,17 @@ document.documentElement.classList.add("js");
       cta: "Consultar data do meu casamento",
       message: "Olá, Fernando! Vim pelo site da Zero61 e quero consultar a data do meu casamento."
     },
-    eventos: {
-      title: "Do protocolo ao auge da celebração, música ao vivo no tom do seu evento.",
-      copy: "Formaturas, confraternizações e encontros de marca recebem uma apresentação pensada para o público, o roteiro e cada virada da noite.",
-      cta: "Consultar data do meu evento",
-      message: "Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para formatura ou evento corporativo."
+    formatura: {
+      title: "Banda para formaturas em Brasília, da solenidade à pista.",
+      copy: "Colações de grau, recepções e bailes com música ao vivo que acompanha o roteiro e cresce junto com a celebração. Repertório, som e iluminação alinhados com a comissão e o cerimonial.",
+      cta: "Consultar data da minha formatura",
+      message: "Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para formatura."
+    },
+    corporativo: {
+      title: "Banda para eventos corporativos em Brasília, da recepção à confraternização.",
+      copy: "Confraternizações, festas de fim de ano e lançamentos com música ao vivo que combina com o público e com a marca. Som e iluminação próprios, tudo planejado com antecedência junto com a sua equipe.",
+      cta: "Consultar data do evento da empresa",
+      message: "Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para evento corporativo."
     },
     quinze: {
       title: "Da entrada à pista, uma noite de 15 anos com energia para todas as gerações.",
@@ -60,7 +66,8 @@ document.documentElement.classList.add("js");
     const bookingTypeField = document.querySelector("[data-booking-type]");
     const bookingTypeByMode = {
       casamento: "Casamento",
-      eventos: "Formatura ou evento corporativo",
+      formatura: "Formatura",
+      corporativo: "Evento corporativo",
       quinze: "15 anos"
     };
     if (bookingTypeField && bookingTypeByMode[modeKey]) {
@@ -211,7 +218,6 @@ document.documentElement.classList.add("js");
 
   const bookingTargets = {
     Casamento: "o meu casamento",
-    "Formatura ou evento corporativo": "uma formatura ou um evento corporativo",
     Formatura: "uma formatura",
     "Evento corporativo": "um evento corporativo",
     "15 anos": "uma festa de 15 anos",
