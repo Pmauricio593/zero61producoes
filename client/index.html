@@ -1,48 +1,490 @@
 <!doctype html>
 <html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1120">
+  <meta name="description" content="Música ao vivo para casamentos, formaturas, eventos corporativos e festas de 15 anos em Brasília, Goiânia e região Centro-Oeste.">
+  <meta name="robots" content="index,follow">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:title" content="Banda para casamentos e eventos em Brasília e Goiânia | Zero61">
+  <meta property="og:description" content="Da cerimônia à pista, uma experiência musical desenhada para cada momento.">
+  <meta property="og:url" content="https://zero61producoes.vercel.app/">
+  <meta property="og:image" content="https://zero61producoes.vercel.app/assets/media/zero61-hero-primeira-danca.jpg">
+  <link rel="canonical" href="https://zero61producoes.vercel.app/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,300..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/styles.css">
+  <title>Banda para casamentos e eventos em Brasília e Goiânia | Zero61</title>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MusicGroup",
+    "name": "Zero61 Produções",
+    "url": "https://zero61producoes.vercel.app/",
+    "sameAs": [
+      "https://www.instagram.com/zero61producoes/",
+      "https://www.instagram.com/fernandobocaooficial/"
+    ],
+    "areaServed": ["Brasília", "Goiânia", "Região Centro-Oeste"]
+  }
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>Zero61 Produções | Banda para Casamentos em Brasília e Goiânia</title>
-    <meta name="description" content="Zero61 Produções - Banda especializada em casamentos em Brasília e Goiás. Música ao vivo para cerimônia, coquetel e festa. Também atendemos formaturas, aniversários e eventos corporativos." />
-    <meta name="keywords" content="banda para casamento Brasília, banda casamento Goiânia, música ao vivo casamento, banda cerimônia, Zero61 Produções, banda festa casamento" />
-    <meta property="og:title" content="Zero61 Produções | Banda para Casamentos" />
-    <meta property="og:description" content="Música ao vivo para o dia mais especial da sua história. Solicite seu orçamento!" />
-    <meta property="og:type" content="website" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-    <!-- Google Ads Conversion Tracking -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18242079039"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'AW-18242079039');
-    </script>
-  </head>
+  <header class="site-header" data-header>
+    <div class="container header-inner">
+      <a class="brand" href="#topo" aria-label="Zero61 Produções — voltar ao início" data-brand-home>
+        <span class="brand-mark" aria-hidden="true">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </span>
+        <span class="brand-name">ZERO<span>61</span></span>
+        <span class="brand-suffix">Produções</span>
+      </a>
 
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-    <script
-      defer
-      src="%VITE_ANALYTICS_ENDPOINT%/umami"
-      data-website-id="%VITE_ANALYTICS_WEBSITE_ID%"></script>
-    <!-- Google Ads WhatsApp Click Conversion Tracking -->
-    <script>
-      document.addEventListener('click', function (e) {
-        var link = e.target.closest('a[href*="wa.me"], a[href*="api.whatsapp.com"]');
-        if (link) {
-          gtag('event', 'conversion', {
-            'send_to': 'AW-18242079039/kc9YCKn6lsAcEL-SwPpD'
-          });
-        }
-      });
-    </script>
-  </body>
+      <nav class="desktop-nav" aria-label="Navegação principal">
+        <a href="#ao-vivo">Ao vivo</a>
+        <a href="#casamentos">Casamentos</a>
+        <a href="#eventos">Eventos</a>
+        <a href="#repertorio">Repertório</a>
+        <a href="#como-funciona">Como funciona</a>
+      </nav>
 
+      <a class="button button--accent header-cta" href="#contato">Consultar minha data</a>
+
+      <button class="menu-toggle" type="button" aria-label="Abrir menu" aria-controls="mobile-menu" aria-expanded="false" data-menu-toggle>
+        <span></span><span></span>
+      </button>
+    </div>
+
+    <nav class="mobile-menu" id="mobile-menu" aria-label="Navegação móvel" hidden data-mobile-menu>
+      <a href="#ao-vivo">Ao vivo</a>
+      <a href="#casamentos">Casamentos</a>
+      <a href="#eventos">Eventos</a>
+      <a href="#repertorio">Repertório</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#contato">Consultar minha data</a>
+    </nav>
+  </header>
+
+  <main id="conteudo" tabindex="-1">
+    <section class="hero" id="topo" aria-labelledby="hero-title">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span></span> Música ao vivo · Brasília, Goiânia e Centro-Oeste</p>
+
+          <div class="event-tabs" role="tablist" aria-label="Escolha o tipo de evento">
+            <button class="event-tab is-active" id="tab-casamento" type="button" role="tab" aria-selected="true" aria-controls="hero-panel" tabindex="0" data-event-tab="casamento">Casamento</button>
+            <button class="event-tab" id="tab-eventos" type="button" role="tab" aria-selected="false" aria-controls="hero-panel" tabindex="-1" data-event-tab="eventos">Formaturas e eventos</button>
+            <button class="event-tab" id="tab-quinze" type="button" role="tab" aria-selected="false" aria-controls="hero-panel" tabindex="-1" data-event-tab="quinze">15 anos</button>
+          </div>
+
+          <div id="hero-panel" role="tabpanel" aria-labelledby="tab-casamento" tabindex="0">
+            <h1 id="hero-title" data-hero-title>Da entrada à última música, uma banda que entende o ritmo do seu casamento.</h1>
+            <p class="hero-intro" data-hero-copy>Cerimônia, coquetel, valsa e festa ganham repertório e energia próprios — tudo alinhado com vocês e com o cerimonial.</p>
+          </div>
+
+          <div class="hero-actions">
+            <a class="button button--accent button--large" href="https://wa.me/556195094042" target="_blank" rel="noopener" data-hero-cta>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.6-4.3a8.5 8.5 0 1 1 15.4-4.6Z"/></svg>
+              <span data-hero-cta-label>Consultar data do meu casamento</span>
+            </a>
+            <a class="button button--ghost button--large" href="#ao-vivo">Ver a banda em cena</a>
+          </div>
+
+          <p class="hero-note"><span aria-hidden="true">↳</span> Sem cadastro: informe os detalhes e abra uma mensagem pronta no WhatsApp.</p>
+        </div>
+
+        <figure class="media-frame media-frame--portrait media-frame--photo reveal reveal--delay" data-slot="hero-primary">
+          <img src="/assets/media/zero61-hero-primeira-danca.jpg" width="720" height="1268" alt="Noivos dançando no centro da pista durante a festa de casamento" fetchpriority="high" decoding="async">
+          <figcaption>
+            <strong>Primeira dança</strong>
+            <span>Casamento real · pista acesa</span>
+          </figcaption>
+        </figure>
+      </div>
+
+      <div class="container proof-strip reveal">
+        <!-- Indicadores vieram do material fornecido e devem ser confirmados antes do lançamento público. -->
+        <div><strong>500<span>+</span></strong><small>eventos realizados</small></div>
+        <div><strong>8<span>+</span></strong><small>anos de estrada</small></div>
+        <div class="proof-strip__wide"><strong>DF · GO · Centro-Oeste</strong><small>Brasília, Goiânia e região Centro-Oeste</small></div>
+      </div>
+
+      <div class="equalizer" aria-hidden="true" data-equalizer></div>
+    </section>
+
+    <section class="section section--ink" id="ao-vivo" aria-labelledby="live-title">
+      <div class="container section-heading section-heading--split reveal">
+        <div>
+          <p class="kicker">Fotos reais · momentos reais</p>
+          <h2 id="live-title">Antes de escolher,<br><em>sinta o palco.</em></h2>
+        </div>
+        <div class="heading-aside">
+          <p>Um recorte de cada atmosfera: a banda em cena, a pista respondendo e a energia compartilhada com cada convidado.</p>
+          <a class="text-link" href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61, quero conhecer a banda ao vivo e conversar sobre o meu evento.">Quero esse clima no meu evento <span>↗</span></a>
+        </div>
+      </div>
+
+      <div class="container live-layout">
+        <figure class="media-frame media-frame--feature media-frame--photo reveal" data-slot="live-main">
+          <img src="/assets/media/zero61-festa-horizontal.jpg" width="1920" height="1440" alt="Banda em primeiro plano e convidados celebrando juntos em uma festa" loading="lazy" decoding="async">
+          <figcaption>
+            <strong>A festa vista do palco</strong>
+            <span>Banda e convidados no mesmo pulso</span>
+          </figcaption>
+        </figure>
+
+        <div class="live-thumbs">
+          <figure class="media-frame media-frame--thumb media-frame--photo reveal" data-slot="live-stage">
+            <img src="/assets/media/zero61-banda-ao-vivo.jpg" width="1080" height="1886" alt="Integrantes da Zero61 tocando ao vivo no palco" loading="lazy" decoding="async">
+            <span class="frame-index">01</span>
+            <figcaption><strong>Banda em cena</strong><span>Som ao vivo</span></figcaption>
+          </figure>
+          <figure class="media-frame media-frame--thumb media-frame--photo reveal reveal--delay" data-slot="live-crowd">
+            <img src="/assets/media/zero61-palco-e-publico.jpg" width="720" height="967" alt="Banda reunida diante dos convidados em uma pista iluminada" loading="lazy" decoding="async">
+            <span class="frame-index">02</span>
+            <figcaption><strong>Do palco</strong><span>Pista cheia</span></figcaption>
+          </figure>
+          <figure class="media-frame media-frame--thumb media-frame--photo reveal reveal--delay-2" data-slot="live-connection">
+            <img src="/assets/media/zero61-noivos-banda-e-pista.jpg" width="1200" height="1600" alt="Integrantes da Zero61, noivos e convidados reunidos na pista" loading="lazy" decoding="async">
+            <span class="frame-index">03</span>
+            <figcaption><strong>Todo mundo junto</strong><span>Noivos, banda e pista</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="casamentos" aria-labelledby="wedding-title">
+      <div class="container section-heading section-heading--split reveal">
+        <div>
+          <p class="kicker kicker--dark">Casamentos</p>
+          <h2 id="wedding-title">A energia muda.<br><em>A música acompanha.</em></h2>
+        </div>
+        <p class="heading-aside heading-aside--dark">Uma experiência contínua, pensada para respeitar o tom de cada etapa e crescer junto com a celebração.</p>
+      </div>
+
+      <div class="container journey" aria-label="Jornada musical do casamento">
+        <article class="journey-step reveal">
+          <div class="step-meta"><span>01</span><span>Emoção</span></div>
+          <div class="mini-eq" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <h3>Cerimônia</h3>
+          <p>As músicas das entradas e da saída seguem o roteiro e o tempo do cerimonial.</p>
+        </article>
+        <article class="journey-step reveal reveal--delay">
+          <div class="step-meta"><span>02</span><span>Encontro</span></div>
+          <div class="mini-eq mini-eq--2" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <h3>Coquetel</h3>
+          <p>Um repertório leve recebe os convidados e cria clima sem disputar espaço com a conversa.</p>
+        </article>
+        <article class="journey-step reveal reveal--delay-2">
+          <div class="step-meta"><span>03</span><span>Memória</span></div>
+          <div class="mini-eq mini-eq--3" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <h3>Valsa</h3>
+          <p>A primeira dança ganha uma interpretação ao vivo conectada à história do casal.</p>
+        </article>
+        <article class="journey-step journey-step--peak reveal reveal--delay-2">
+          <div class="step-meta"><span>04</span><span>Energia</span></div>
+          <div class="mini-eq mini-eq--4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          <h3>Pista</h3>
+          <p>Uma sequência versátil costura estilos e gerações para a festa seguir viva até a última música.</p>
+        </article>
+      </div>
+
+      <div class="container">
+        <div class="feature-callout reveal">
+          <div class="feature-callout__icon" aria-hidden="true">↗</div>
+          <p><strong>Do roteiro à operação.</strong> Repertório, transições, som e iluminação são alinhados com vocês, o cerimonial e os demais fornecedores.</p>
+          <a class="button button--accent" href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61 e quero conversar sobre a música do meu casamento.">Falar sobre meu casamento</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--navy" id="eventos" aria-labelledby="events-title">
+      <div class="container section-heading section-heading--split reveal">
+        <div>
+          <p class="kicker">Outros palcos</p>
+          <h2 id="events-title">Cada evento tem<br><em>seu próprio pulso.</em></h2>
+        </div>
+        <p class="heading-aside">Do protocolo à pista, a apresentação muda de tom para conversar com o público e com o propósito da celebração.</p>
+      </div>
+
+      <div class="container event-showcase">
+        <article class="event-feature event-feature--text reveal">
+          <div class="event-feature__copy">
+            <span>01 / Formaturas</span>
+            <h3>Da solenidade à celebração.</h3>
+            <p>Trilha musical para colação de grau, recepção e baile, com leitura de ambiente em cada virada da noite.</p>
+            <a class="text-link" href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para formatura.">Consultar formatura <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="event-feature event-feature--text reveal reveal--delay">
+          <div class="event-feature__copy">
+            <span>02 / Corporativo</span>
+            <h3>Profissional no roteiro. Vivo no palco.</h3>
+            <p>Uma apresentação pensada para confraternizações, lançamentos e encontros de marca, do receptivo ao encerramento.</p>
+            <a class="text-link" href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para evento corporativo.">Consultar evento <span>↗</span></a>
+          </div>
+        </article>
+      </div>
+
+      <div class="container event-cards">
+        <article class="event-card reveal">
+          <span class="event-card__number">03</span>
+          <h3>15 anos</h3>
+          <p>Entrada, valsa e uma seleção musical capaz de aproximar diferentes gerações na mesma festa.</p>
+          <a href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para festa de 15 anos.">Consultar data <span>↗</span></a>
+        </article>
+        <article class="event-card reveal reveal--delay">
+          <span class="event-card__number">04</span>
+          <h3>Aniversários</h3>
+          <p>Um show feito para celebrar histórias, reunir pessoas e transformar a ocasião em memória.</p>
+          <a href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para aniversário.">Consultar data <span>↗</span></a>
+        </article>
+        <article class="event-card reveal reveal--delay-2">
+          <span class="event-card__number">05</span>
+          <h3>Réveillon</h3>
+          <p>Música ao vivo para marcar a virada e começar o novo ciclo com a energia certa.</p>
+          <a href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para réveillon.">Consultar data <span>↗</span></a>
+        </article>
+        <article class="event-card event-card--accent reveal reveal--delay-2">
+          <span class="event-card__number">+</span>
+          <h3>Outro formato?</h3>
+          <p>Conte como você imagina o evento. A Zero61 ajuda a encontrar o formato musical ideal.</p>
+          <a href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61 e quero contar sobre um evento diferente.">Contar minha ideia <span>↗</span></a>
+        </article>
+      </div>
+    </section>
+
+    <section class="section repertoire" id="repertorio" aria-labelledby="repertoire-title">
+      <div class="container section-heading section-heading--split reveal">
+        <div>
+          <p class="kicker">Repertório em movimento</p>
+          <h2 id="repertoire-title">Um set que lê<br><em>o momento.</em></h2>
+        </div>
+        <p class="heading-aside">As músicas especiais são alinhadas antes. Durante a celebração, o repertório percorre os estilos que combinam com o público e com cada fase do evento.</p>
+      </div>
+
+      <div class="genre-wall" aria-label="Estilos presentes no repertório">
+        <div class="genre-line genre-line--left">
+          <span>Sertanejo</span><i>◆</i><span class="outline">Pop</span><i>◆</i><span>Forró</span><i>◆</i><span class="outline">Axé</span>
+        </div>
+        <div class="genre-line genre-line--right">
+          <span>Pagode</span><i>◆</i><span class="outline">Hits internacionais</span><i>◆</i><span>Clássicos</span>
+        </div>
+      </div>
+
+      <div class="container repertoire-note reveal">
+        <span class="repertoire-note__mark" aria-hidden="true">♪</span>
+        <p><strong>Não é uma playlist engessada.</strong> É uma construção musical que respeita o roteiro e responde ao que acontece na celebração.</p>
+      </div>
+    </section>
+
+    <section class="section section--light production" aria-labelledby="production-title">
+      <div class="container production-grid">
+        <div class="production-intro reveal">
+          <p class="kicker kicker--dark">Muito além do repertório</p>
+          <h2 id="production-title">Uma noite fluida começa <em>antes do palco.</em></h2>
+          <p>O show ganha força quando música, roteiro e operação trabalham juntos. Por isso, cada ponto é alinhado antes do evento.</p>
+        </div>
+
+        <div class="production-list">
+          <article class="production-item reveal">
+            <span>01</span>
+            <div><h3>Direção musical</h3><p>Escolhas para os momentos especiais e repertório coerente com o perfil da celebração.</p></div>
+          </article>
+          <article class="production-item reveal reveal--delay">
+            <span>02</span>
+            <div><h3>Leitura de ambiente</h3><p>Intensidade e condução mudam ao longo da noite para acompanhar o que acontece.</p></div>
+          </article>
+          <article class="production-item reveal reveal--delay-2">
+            <span>03</span>
+            <div><h3>Integração com fornecedores</h3><p>Alinhamento com cerimonial e parceiros para que entradas e transições aconteçam no tempo certo.</p></div>
+          </article>
+          <article class="production-item reveal reveal--delay-2">
+            <span>04</span>
+            <div><h3>Estrutura de palco</h3><p>Som e iluminação pensados para valorizar a apresentação sem competir com o projeto do evento.</p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section process" id="como-funciona" aria-labelledby="process-title">
+      <div class="container section-heading section-heading--split reveal">
+        <div>
+          <p class="kicker">Da primeira mensagem à proposta</p>
+          <h2 id="process-title">Simples para contratar.<br><em>Cuidadoso para realizar.</em></h2>
+        </div>
+        <p class="heading-aside">Você traz a data e o contexto. A conversa transforma isso em uma proposta coerente com o tamanho e o estilo do seu evento.</p>
+      </div>
+
+      <div class="container process-steps">
+        <article class="process-step reveal">
+          <span class="process-step__number">01</span>
+          <div class="process-step__line" aria-hidden="true"></div>
+          <p class="process-step__tag">Primeiro contato</p>
+          <h3>Conte o essencial.</h3>
+          <p>Envie data, cidade, tipo de evento e o clima que você imagina.</p>
+        </article>
+        <article class="process-step reveal reveal--delay">
+          <span class="process-step__number">02</span>
+          <div class="process-step__line" aria-hidden="true"></div>
+          <p class="process-step__tag">Construção</p>
+          <h3>Alinhe a experiência.</h3>
+          <p>Converse sobre momentos, repertório, formato da apresentação e estrutura.</p>
+        </article>
+        <article class="process-step reveal reveal--delay-2">
+          <span class="process-step__number">03</span>
+          <div class="process-step__line" aria-hidden="true"></div>
+          <p class="process-step__tag">Próximo passo</p>
+          <h3>Receba a proposta.</h3>
+          <p>Com o contexto definido, você recebe disponibilidade e condições pelo WhatsApp.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section--ink proof" id="depoimentos" aria-labelledby="proof-title">
+      <div class="container proof-grid">
+        <div class="quote-block reveal">
+          <p class="kicker">No calor da festa</p>
+          <h2 id="proof-title">A lembrança que<br><em>fica reverberando.</em></h2>
+          <blockquote>“Encaixou certinho tudo o que a gente precisava: cada música no momento certo e o pessoal vibrando até agora. A festa vai acabar e eu vou pagar a hora extra com orgulho!”</blockquote>
+          <cite>Daniel e Jéssika · noivos</cite>
+
+          <article class="testimonial-card">
+            <p class="testimonial-card__label">Mensagem da noiva · depois da festa</p>
+            <blockquote>“Foi maravilhoso! Eles são fantásticos, super animados, a música é maravilhosa. E, nossa, a gente não parou de dançar. Eu tô aqui derretendo. Mas eu amei, muito obrigada! Vocês são maravilhosos!”</blockquote>
+            <cite>Juliana · noiva</cite>
+          </article>
+        </div>
+
+        <figure class="media-frame media-frame--proof-photo media-frame--photo reveal reveal--delay" data-slot="proof-celebration">
+          <img src="/assets/media/zero61-banda-e-convidados.jpg" width="1080" height="1443" alt="Integrantes da banda reunidos com convidados depois da apresentação" loading="lazy" decoding="async">
+          <figcaption><strong>Uma noite compartilhada</strong><span>Banda e convidados</span></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section section--light faq" aria-labelledby="faq-title">
+      <div class="container faq-grid">
+        <div class="faq-intro reveal">
+          <p class="kicker kicker--dark">Perguntas frequentes</p>
+          <h2 id="faq-title">O que você pode querer saber <em>antes de chamar.</em></h2>
+          <p>Se a sua dúvida não estiver aqui, mande uma mensagem. O atendimento segue direto pelo WhatsApp.</p>
+        </div>
+        <div class="faq-list reveal reveal--delay">
+          <details>
+            <summary>Quais tipos de evento a Zero61 atende?<span aria-hidden="true"></span></summary>
+            <p>Casamentos, formaturas, eventos corporativos, festas de 15 anos, aniversários, réveillon e outros formatos de celebração.</p>
+          </details>
+          <details>
+            <summary>Posso escolher músicas para momentos especiais?<span aria-hidden="true"></span></summary>
+            <p>Sim. Entradas, cerimônia, valsa e outros momentos marcantes são alinhados previamente para fazer sentido dentro do roteiro.</p>
+          </details>
+          <details>
+            <summary>Onde a banda atende?<span aria-hidden="true"></span></summary>
+            <p>A Zero61 atende Brasília, Goiânia e outras cidades da região Centro-Oeste. Informe a cidade para confirmar a disponibilidade.</p>
+          </details>
+          <details>
+            <summary>Como recebo disponibilidade e proposta?<span aria-hidden="true"></span></summary>
+            <p>Envie a data, a cidade e o tipo de evento. A conversa continua pelo WhatsApp, com o formato e as condições adequados ao seu evento.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="section booking" id="contato" aria-labelledby="booking-title">
+      <div class="booking-wave" aria-hidden="true"></div>
+      <div class="container booking-grid">
+        <div class="booking-copy reveal">
+          <p class="kicker kicker--dark">Vamos falar do seu evento?</p>
+          <h2 id="booking-title">Sua data ainda<br><em>está livre?</em></h2>
+          <p>Informe os detalhes abaixo. A mensagem sai pronta para você continuar a conversa no WhatsApp.</p>
+        </div>
+
+        <form class="booking-form reveal reveal--delay" data-booking-form>
+          <div class="field-row">
+            <label class="field">
+              <span>Data do evento</span>
+              <input type="date" name="date" data-booking-date>
+            </label>
+            <label class="field">
+              <span>Tipo de evento</span>
+              <select name="type" data-booking-type>
+                <option value="Casamento">Casamento</option>
+                <option value="Formatura ou evento corporativo">Formatura ou evento corporativo</option>
+                <option value="Formatura">Formatura</option>
+                <option value="Evento corporativo">Evento corporativo</option>
+                <option value="15 anos">15 anos</option>
+                <option value="Aniversário">Aniversário</option>
+                <option value="Réveillon">Réveillon</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </label>
+          </div>
+          <label class="field">
+            <span>Cidade</span>
+            <input type="text" name="city" placeholder="Ex.: Brasília, DF" autocomplete="address-level2" data-booking-city>
+          </label>
+          <button class="button button--dark button--large booking-submit" type="submit" data-booking-link>
+            <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.5 11.6a8.5 8.5 0 0 1-12.6 7.4L3.5 20.5l1.6-4.3a8.5 8.5 0 1 1 15.4-4.6Z"/></svg>
+            Consultar minha data no WhatsApp
+          </button>
+          <p class="message-preview"><strong>Sua mensagem:</strong> “<span data-message-preview>Olá, Fernando! Vim pelo site da Zero61 e quero consultar uma data para o meu casamento.</span>”</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-top">
+      <div class="footer-brand">
+        <a class="brand" href="#topo" aria-label="Zero61 Produções — voltar ao início">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span>
+          <span class="brand-name">ZERO<span>61</span></span>
+          <span class="brand-suffix">Produções</span>
+        </a>
+        <p>Música ao vivo para transformar momentos em memória.</p>
+      </div>
+      <div class="footer-links">
+        <div>
+          <span>Navegue</span>
+          <a href="#ao-vivo">Ao vivo</a>
+          <a href="#casamentos">Casamentos</a>
+          <a href="#eventos">Eventos</a>
+          <a href="#repertorio">Repertório</a>
+        </div>
+        <div>
+          <span>Converse</span>
+          <a href="https://wa.me/556195094042" target="_blank" rel="noopener" data-whatsapp-message="Olá, Fernando! Vim pelo site da Zero61 e quero conversar sobre o meu evento.">WhatsApp</a>
+          <a href="https://www.instagram.com/zero61producoes/" target="_blank" rel="noopener">@zero61producoes</a>
+          <a href="https://www.instagram.com/fernandobocaooficial/" target="_blank" rel="noopener">@fernandobocaooficial</a>
+        </div>
+        <div>
+          <span>Atuação</span>
+          <p>Brasília · Goiânia<br>Região Centro-Oeste</p>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© <span data-year></span> Zero61 Produções.</p>
+      <p>Feito para soar tão vivo quanto o palco.</p>
+    </div>
+  </footer>
+
+  <div class="mobile-cta" aria-hidden="true" data-mobile-cta>
+    <a class="button button--accent" href="#contato">Consultar minha data <span aria-hidden="true">↗</span></a>
+  </div>
+
+  <noscript>
+    <div class="noscript">O site funciona melhor com JavaScript ativado. Os links de contato continuam disponíveis no rodapé.</div>
+  </noscript>
+
+  <script src="/script.js" defer></script>
+</body>
 </html>
